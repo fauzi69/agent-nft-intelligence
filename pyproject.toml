@@ -1,0 +1,9 @@
+[project]
+name = "agent-nft-intelligence"
+version = "1.0.0"
+description = "Collection intelligence product for holder quality, floor pressure, trait momentum, and liquidity alerts."
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

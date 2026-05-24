@@ -1,0 +1,10 @@
+{
+  "scenario": "collection launch review",
+  "signals": {
+    "floor_depth": 50,
+    "unique_holder_ratio": 57,
+    "trait_velocity": 64,
+    "listing_pressure": 71,
+    "whale_accumulation": 78
+  }
+}
