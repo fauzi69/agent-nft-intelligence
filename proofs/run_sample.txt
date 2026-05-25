@@ -1,4 +1,4 @@
 NFT Intelligence Desk
-5 specialist agents completed; 4 high-priority findings; 49835 estimated tokens.
-tokens=49835
-daily_projection=4784160
+5 specialist agents completed; 4 high-priority findings; 45165 estimated tokens.
+tokens=45165
+daily=4335840
