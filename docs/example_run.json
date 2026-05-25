@@ -1,0 +1,122 @@
+{
+  "project": "NFT Intelligence Desk",
+  "status": "completed",
+  "mode": "deterministic-reviewer-demo",
+  "latency_ms": 0,
+  "summary": "5 specialist agents completed; 4 high-priority findings; 49835 estimated tokens.",
+  "token_usage": {
+    "project": "NFT Intelligence Desk",
+    "events": [
+      {
+        "timestamp": "2026-05-25T20:14:50.908026+00:00",
+        "project": "NFT Intelligence Desk",
+        "agent": "Liquidity Scout",
+        "estimated_tokens": 12791,
+        "severity": "critical"
+      },
+      {
+        "timestamp": "2026-05-25T20:14:50.908046+00:00",
+        "project": "NFT Intelligence Desk",
+        "agent": "Exploit Sentinel",
+        "estimated_tokens": 8718,
+        "severity": "high"
+      },
+      {
+        "timestamp": "2026-05-25T20:14:50.908078+00:00",
+        "project": "NFT Intelligence Desk",
+        "agent": "Oracle Auditor",
+        "estimated_tokens": 4265,
+        "severity": "medium"
+      },
+      {
+        "timestamp": "2026-05-25T20:14:50.908083+00:00",
+        "project": "NFT Intelligence Desk",
+        "agent": "Treasury Guardian",
+        "estimated_tokens": 13270,
+        "severity": "high"
+      },
+      {
+        "timestamp": "2026-05-25T20:14:50.908087+00:00",
+        "project": "NFT Intelligence Desk",
+        "agent": "Incident Reporter",
+        "estimated_tokens": 10791,
+        "severity": "critical"
+      }
+    ],
+    "total_estimated_tokens": 49835,
+    "daily_projection_tokens": 4784160,
+    "agent_count": 5
+  },
+  "findings": [
+    {
+      "agent": "Liquidity Scout",
+      "role": "tracks pool depth, volatility spikes, and suspicious flow concentration",
+      "severity": "critical",
+      "confidence": 0.83,
+      "finding": "Liquidity Scout reviewed DeFi risk monitoring signal: collection shows rising floor but circular trades among new wallets. Risk pattern=critical confidence=0.83.",
+      "evidence": [
+        "domain=DeFi risk monitoring",
+        "subject_hash=65c1a3beaa",
+        "agent_stage=1"
+      ],
+      "recommendation": "Run liquidity scout follow-up pass, capture artifacts, then prioritize critical items first.",
+      "estimated_tokens": 12791
+    },
+    {
+      "agent": "Exploit Sentinel",
+      "role": "maps events to known attack primitives and detects anomalous protocol behavior",
+      "severity": "high",
+      "confidence": 0.91,
+      "finding": "Exploit Sentinel reviewed DeFi risk monitoring signal: collection shows rising floor but circular trades among new wallets. Risk pattern=high confidence=0.91.",
+      "evidence": [
+        "domain=DeFi risk monitoring",
+        "subject_hash=65c1a3beaa",
+        "agent_stage=2"
+      ],
+      "recommendation": "Run exploit sentinel follow-up pass, capture artifacts, then prioritize high items first.",
+      "estimated_tokens": 8718
+    },
+    {
+      "agent": "Oracle Auditor",
+      "role": "checks oracle drift, stale feeds, and manipulation windows",
+      "severity": "medium",
+      "confidence": 0.68,
+      "finding": "Oracle Auditor reviewed DeFi risk monitoring signal: collection shows rising floor but circular trades among new wallets. Risk pattern=medium confidence=0.68.",
+      "evidence": [
+        "domain=DeFi risk monitoring",
+        "subject_hash=65c1a3beaa",
+        "agent_stage=3"
+      ],
+      "recommendation": "Run oracle auditor follow-up pass, capture artifacts, then prioritize medium items first.",
+      "estimated_tokens": 4265
+    },
+    {
+      "agent": "Treasury Guardian",
+      "role": "scores treasury exposure and proposes emergency controls",
+      "severity": "high",
+      "confidence": 0.76,
+      "finding": "Treasury Guardian reviewed DeFi risk monitoring signal: collection shows rising floor but circular trades among new wallets. Risk pattern=high confidence=0.76.",
+      "evidence": [
+        "domain=DeFi risk monitoring",
+        "subject_hash=65c1a3beaa",
+        "agent_stage=4"
+      ],
+      "recommendation": "Run treasury guardian follow-up pass, capture artifacts, then prioritize high items first.",
+      "estimated_tokens": 13270
+    },
+    {
+      "agent": "Incident Reporter",
+      "role": "synthesizes operator-grade markdown incident reports",
+      "severity": "critical",
+      "confidence": 0.75,
+      "finding": "Incident Reporter reviewed DeFi risk monitoring signal: collection shows rising floor but circular trades among new wallets. Risk pattern=critical confidence=0.75.",
+      "evidence": [
+        "domain=DeFi risk monitoring",
+        "subject_hash=65c1a3beaa",
+        "agent_stage=5"
+      ],
+      "recommendation": "Run incident reporter follow-up pass, capture artifacts, then prioritize critical items first.",
+      "estimated_tokens": 10791
+    }
+  ]
+}

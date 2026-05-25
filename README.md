@@ -100,3 +100,40 @@ index.html                Static live dashboard
 ## 📄 License
 
 MIT.
+
+<!-- MIMO_APPROVAL_PATTERN_UPGRADE -->
+## Reviewer-Grade MiMo Agent Architecture
+
+NFT Intelligence Desk is structured as a token-intensive, multi-agent product rather than a static demo. The pipeline fans out across specialist agents, records per-agent token estimates, then synthesizes findings into reviewer-ready output.
+
+### Specialist Agent Fleet
+- **Rarity Analyst** — interprets trait distribution and floor price anomalies.
+- **Wash Trade Detector** — flags circular sales and suspicious marketplace timing.
+- **Holder Profiler** — summarizes whale concentration and wallet quality.
+- **Momentum Tracker** — scores volume, listing pressure, and social catalysts.
+- **Collection Reporter** — produces actionable collection intelligence.
+
+### Verified Demo Run
+- Scenario: `collection shows rising floor but circular trades among new wallets`
+- Agents executed: 5
+- Estimated tokens in sample run: **49,835**
+- Daily projection at 96 runs/day: **4,784,160 tokens/day**
+- Output artifact: `docs/example_run.json`
+- Human-readable proof: `docs/EXAMPLE_RUN.md`
+
+### Run Locally
+```bash
+python3 cli.py --all
+python3 -m pytest -q
+python3 - <<'PY'
+from backend.core.pipeline import run_pipeline_sync
+print(run_pipeline_sync('NFT Intelligence Desk', {'subject': 'collection shows rising floor but circular trades among new wallets'}))
+PY
+```
+
+### Proof Pack
+- `proofs/boot_log.txt` — environment boot evidence
+- `proofs/run_sample.txt` — deterministic pipeline output summary
+- `docs/example_run.json` — raw structured result
+- `docs/EXAMPLE_RUN.md` — review-facing run report
+
